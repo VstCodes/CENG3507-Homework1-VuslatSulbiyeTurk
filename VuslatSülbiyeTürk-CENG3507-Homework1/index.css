@@ -1,0 +1,285 @@
+*{
+    box-sizing: border-box; /* Adjust box model. */
+    margin: 0; /* Reset default margin for all elements. */
+    padding: 0; /* Reset default padding for all elements. */
+}
+
+/* Middle section layout of the page. */
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.column{
+    height: 80vh;
+    padding: 20px;
+    text-align: center;
+}
+.side{
+    flex: 1;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+/* Header section of the page. */
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: #820101;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header div.logo{
+    width: 10vh;
+    height: 100%;
+    margin: 0vw 5vw;
+    background-image: url('images/CapitalBank_Logo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+header div#slogan{
+    width: 70%;
+    height: 10vh; 
+    text-align: center; 
+    color: #0f0439;
+    font-size: clamp(1rem, 2vw + 1rem, 3rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Left column of the middle section of the page. */
+#left-column ul li{
+    list-style-type: none;
+    padding: 6%;
+    margin: 5%;
+    color:#d0a933;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px #820101;
+}
+#left-column ul li:hover{
+    box-shadow: 0px 8px 16px 0px #0f0439;
+    color: #820101;
+}
+.dropdown-content{
+    display: none;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+/* Middle column of the middle section of the page. */
+.middle{
+    flex:3;
+    overflow: auto;
+    scrollbar-width: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#welcome-section{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    font-size: clamp(16px 2vh 24px);
+    font-weight: bold;
+}
+[class^="content"]{
+    width: 90%;
+    margin: 3%;
+    padding: 2%;
+    border: 1px solid #820101;
+    box-shadow: 0px 8px 16px 0px #d0a933;
+    border-radius: 10px;
+    flex: 1;
+}
+.content1 ul{
+    list-style-position: inside;
+    color: #0f0439;
+    text-align: left;
+    font-size: 20px;
+}
+.content2{
+    height: 60vh;
+}
+.content3{
+    height: 70vw;
+}
+.content4{
+    height: 50vw;
+}
+[class^="content"] p strong, #welcome-section p{
+    font-size: 24px;
+    color: #820101;
+}
+[class^="content"] p{
+    font-size: 20px;
+    color: #0f0439;
+}
+
+/* Right column of the middle section of the page. */
+#right-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.right-side-div{
+    width: 90%;
+    height: 40vh;
+    margin: 5%;
+    box-shadow: 0px 8px 16px 0px #820101;
+    border-radius: 10px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#history-div{
+    height: fit-content;
+    padding: 5%;
+    text-align: left;
+}
+#history-div p{
+    color: #820101;
+}
+#history-div ul{
+    list-style-position: inside;
+    color: #0f0439;
+}
+
+/* Personal Info Box */
+#user{
+    width: 10vh;
+    height: 15vh;
+    margin: 2%;
+    background-image: url('images/user_foto.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.info{
+    width: 85%;
+    min-height: 10vh;
+    margin: 1%;
+    padding: 1.5%;
+    color: #0f0439;
+}
+
+/* Account Info Box */
+#account{
+    width: 10vh;
+    height: 10vh;
+    margin: 2%;
+    background-image: url('images/wallet.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* Footer section of the page. */
+footer{
+    width: 100%;
+    height: 10vh;
+    background-color: #820101;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-div{
+    width: 10vh;
+    height: 100%;
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#footer-logo{
+    width: 10vh;
+    height: 100%;
+    margin-left: 1%;
+    margin-right: 1%;
+    background-image: url('images/CapitalBank_Logo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#footer-left-info{
+    color: #0f0439;
+    font-size: clamp(12px, 1vh, 24px);
+}
+#app-store{
+    background-image: url('images/app-store.png');
+}
+#play-store{
+    background-image: url('images/play-store.png');
+}
+#subscribe{
+    background-image: url('images/press-button.png');
+}
+#rate{
+    background-image: url('images/rate.png');
+}
+
+.media-icon{
+    width: 5vh;
+    height: 5vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.media-icon:hover{
+    width: 6vh;
+    height: 6vh;
+}
+#instagram{
+    background-image: url('images/instagram.png');
+}
+#facebook{
+    background-image: url('images/facebook.png');
+}
+#linkedin{
+    background-image: url('images/linkedin.png');
+}
+#twitter{
+    background-image: url('images/twitter.png');
+}
+
+
+/* Responsive layout - makes the three columns stack on 
+top of each other instead of next to each other */
+@media (max-width: 900px) {
+    .row {
+      flex-direction: column;
+    }
+    .column.side{
+        overflow: auto;
+    }
+    
+    footer{
+        flex-direction: column;
+        height: calc(100% + 5vh);
+
+    }
+    .footer-div{
+        width: 100vw;
+        height: 50vh;
+    }
+    #footer-logo{
+        width: 5vh;
+        height: 5vh;
+    }
+    .media-icon{
+        margin: 1vh;   
+    } 
+}
+@media (max-width: 295px){
+    #slogan p{
+        font-size: 12px;
+    }
+}
